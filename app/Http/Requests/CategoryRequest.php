@@ -24,7 +24,7 @@ class CategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required',
+            'name' => 'required|unique:categories',
             'description' => 'required',
             'image.*' => 'image',
             'condition' => 'required',
@@ -34,6 +34,7 @@ class CategoryRequest extends FormRequest
     public function messages(){
         return[
             'required' => 'Este campo é obrigatório',
+            'unique' => 'O campo nome não aceita valor duplicado',
             'image' => 'O arquivo não é uma imagem valida'
 
         ];

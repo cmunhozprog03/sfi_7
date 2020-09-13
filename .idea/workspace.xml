@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8b1f1e9-960f-4ed9-9cc2-4bf2e0225aa8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_13_022335_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599956006422</updated>
       <workItem from="1599956007489" duration="373000" />
-      <workItem from="1599956404756" duration="8434000" />
+      <workItem from="1599956404756" duration="9227000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Split AdminLte">
       <created>1599956941132</created>
@@ -208,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599963307896</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create table Category, Controller, Request, Views: index, create, edit">
+      <created>1599965440272</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599965440272</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +231,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Split AdminLte" />
     <MESSAGE value="end Split AdminLte" />
-    <option name="LAST_COMMIT_MESSAGE" value="end Split AdminLte" />
+    <MESSAGE value="Create table Category, Controller, Request, Views: index, create, edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create table Category, Controller, Request, Views: index, create, edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="247" key="#Composer" timestamp="1599956115869">
@@ -260,9 +263,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="183" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599956376803" />
-    <state x="274" y="100" key="Vcs.Push.Dialog.v2" timestamp="1599963310802">
+    <state x="274" y="100" key="Vcs.Push.Dialog.v2" timestamp="1599965442332">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1599963310802" />
+    <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1599965442332" />
   </component>
 </project>
