@@ -17,18 +17,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', function(){
+
+
+
+
+
+Route::get('/admin', function(){
     return view('admin.dashboard');
 });
 
-
-
+Route::resource('manager', 'ManagerController');
+Route::resource('sectors', 'Admin\SectorController');
 
 Route::get('/index/test', function(){
     return view('test');
 });
 
-Route::resource('category', 'Admin\\CategoryController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -3,8 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Category
 
 class Category extends Model
 {
-    protected $fillable = ['name', 'description', 'image', 'condition', 'position', 'slug'];
+    public function sector(){
+        return $this->belongsTo(Sector::class);
+    }
 }

@@ -20,8 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8b1f1e9-960f-4ed9-9cc2-4bf2e0225aa8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Categories_Photos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ManagerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SectorRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Products_Photos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Sector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Sectors_Photos.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_15_145600_create_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_15_145710_create_products_photos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_15_145740_create_categories_photos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_15_145843_create_categories_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_15_150156_create_sectors_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_15_150207_create_sector_photos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sectors/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sectors/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sectors/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SectorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_13_022335_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_15_145540_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/create.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/edit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/categories/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +210,11 @@
       <option name="presentableId" value="Default" />
       <updated>1599956006422</updated>
       <workItem from="1599956007489" duration="373000" />
-      <workItem from="1599956404756" duration="9227000" />
+      <workItem from="1599956404756" duration="12936000" />
+      <workItem from="1600008868008" duration="6568000" />
+      <workItem from="1600022762722" duration="3530000" />
+      <workItem from="1600131686139" duration="9426000" />
+      <workItem from="1600188268188" duration="1952000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Split AdminLte">
       <created>1599956941132</created>
@@ -210,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599965440272</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Settings CategoyController and CategoryRequest">
+      <created>1599966288231</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599966288231</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,13 +260,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Split AdminLte" />
     <MESSAGE value="end Split AdminLte" />
     <MESSAGE value="Create table Category, Controller, Request, Views: index, create, edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create table Category, Controller, Request, Views: index, create, edit" />
+    <MESSAGE value="Settings CategoyController and CategoryRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Settings CategoyController and CategoryRequest" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="247" key="#Composer" timestamp="1599956115869">
@@ -243,29 +279,33 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="462" y="109" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1599964255501" />
-    <state width="1321" height="181" key="GridCell.Tab.0.bottom" timestamp="1599958929409">
+    <state width="1321" height="181" key="GridCell.Tab.0.bottom" timestamp="1600007153533">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1321" height="181" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1599958929409" />
-    <state width="1321" height="181" key="GridCell.Tab.0.center" timestamp="1599958929409">
+    <state width="1321" height="181" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600007153533" />
+    <state width="1321" height="181" key="GridCell.Tab.0.center" timestamp="1600007153533">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1321" height="181" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1599958929409" />
-    <state width="1321" height="181" key="GridCell.Tab.0.left" timestamp="1599958929408">
+    <state width="1321" height="181" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1600007153533" />
+    <state width="1321" height="181" key="GridCell.Tab.0.left" timestamp="1600007153533">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1321" height="181" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1599958929408" />
-    <state width="1321" height="181" key="GridCell.Tab.0.right" timestamp="1599958929409">
+    <state width="1321" height="181" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1600007153533" />
+    <state width="1321" height="181" key="GridCell.Tab.0.right" timestamp="1600007153533">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1321" height="181" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1599958929409" />
+    <state width="1321" height="181" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1600007153533" />
     <state x="183" y="12" key="SettingsEditor" timestamp="1599956376803">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="183" y="12" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1599956376803" />
-    <state x="274" y="100" key="Vcs.Push.Dialog.v2" timestamp="1599965442332">
+    <state x="274" y="100" key="Vcs.Push.Dialog.v2" timestamp="1599966289891">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1599965442332" />
+    <state x="274" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1599966289891" />
+    <state x="6" y="87" width="1182" height="554" key="dock-window-1" timestamp="1600190241405">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="6" y="87" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1600190241405" />
   </component>
 </project>

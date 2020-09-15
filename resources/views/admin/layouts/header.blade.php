@@ -208,11 +208,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="pages/widgets.html" class="nav-link">
+                    <li class="nav-item @if(request()->is('sectors')) active @endif">
+                        <a href="{{route('sectors.index')}}" class="nav-link">
                             <i class="nav-icon fas fa-th"></i>
                             <p>
-                                Widgets
+                                Setores
                                 <span class="right badge badge-danger">New</span>
                             </p>
                         </a>
